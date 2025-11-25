@@ -1,0 +1,15 @@
+.duyanh-hero {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 26px;
+    background: black;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,44 @@
+{{ 'critical.css' | asset_url | stylesheet_tag }}
+
+<div class="duyanh-product-grid">
+  <h2>{{ section.settings.heading }}</h2>
+
+  <div class="grid">
+    {% for product in collections.all.products limit: 4 %}
+      <div class="product-card">
+        {% if product.featured_media %}
+            <img
+              src="{{ product.featured_media | image_url: width: 400 }}"
+              width="{{ product.featured_media.width }}"
+              height="{{ product.featured_media.height }}"
+              alt="{{ product.featured_media.alt | escape }}"
+              loading="lazy"
+            >
+          {% endif %}
+          
+          
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.price | money }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "DuyAnh Product Grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Sản phẩm nổi bật"
+    }
+  ],
+  "presets": [
+    {
+      "name": "DuyAnh Product Grid"
+    }
+  ]
+}
+{% endschema %}

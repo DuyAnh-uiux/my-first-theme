@@ -1,0 +1,21 @@
+{
+    "sections": {
+      "duyanh_hero": {
+        "type": "duyanh-hero",
+        "settings": {
+          "heading": "Landing page của Duy Anh"
+        }
+      },
+      "duyanh_grid": {
+        "type": "duyanh-product-grid",
+        "settings": {
+          "heading": "Sản phẩm cho landing"
+        }
+      }
+    },
+    "order": [
+      "duyanh_hero",
+      "duyanh_grid"
+    ]
+  }
+  

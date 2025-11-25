@@ -1,0 +1,48 @@
+{{ 'duyanh-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="duyanh-hero">
+  <h1>{{ section.settings.heading }}</h1>
+  <p>{{ section.settings.subtext }}</p>
+
+  {% if section.settings.button_text != blank %}
+    <a href="{{ section.settings.button_link }}" class="hero-button">
+      {{ section.settings.button_text }}
+    </a>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Duy Anh Hero Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Xin chào từ section đầu tiên của bạn!"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Phần mô tả nhỏ",
+      "default": "Bạn đang học Shopify rất tốt!"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Text của button",
+      "default": "Nhấn thử"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link button"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Duy Anh Hero"
+    }
+  ]
+}
+{% endschema %}
