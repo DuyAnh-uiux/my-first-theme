@@ -1,0 +1,25 @@
+.duyanh-featured-collection {
+    padding: 40px 20px;
+  }
+  
+  .duyanh-featured-collection .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .duyanh-featured-collection img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .duyanh-featured-collection .view-all {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  

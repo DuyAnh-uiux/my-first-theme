@@ -71,6 +71,17 @@
       "title": "Title",
       "subtitle": "Subtitle",
       "normal": "Normal text"
-    },
+    }
+  },
+  "sections": {
+    "duyanh_featured_collection": {
+      "name": "Featured collection",
+      "preset_name": "Featured collection",
+      "settings": {
+        "heading_label": "Heading",
+        "collection_label": "Collection",
+        "product_limit_label": "Number of products to show"
+      }
+    }
   }
 }

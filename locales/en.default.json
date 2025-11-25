@@ -48,5 +48,18 @@
     "submit": "Search",
     "no_results_html": "No results found for {{ terms }}",
     "results_for_html": "{{ count }} results found for {{ terms }}"
+  },
+  "sections": {
+    "duyanh_featured_collection": {
+      "name": "Featured collection",
+      "preset_name": "Featured collection",
+      "view_all": "View all products",
+      "empty_state": "No products available in this collection.",
+      "settings": {
+        "heading_label": "Heading",
+        "collection_label": "Collection",
+        "product_limit_label": "Number of products to show"
+      }
+    }
   }
 }
